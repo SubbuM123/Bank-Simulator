@@ -11,7 +11,7 @@ public class Bank {
         savings_apy = setAPY;
 
         accounts.put("Savings", new Account(0, "Savings", savings_apy));
-        accounts.put("Checking", new Account(0, "Checking", 0));
+        accounts.put("Checking", new Account(0, "Checking", 0.25));
     }
     public void Deposit(double amount, String acc) {
         Account s = accounts.get(acc);
